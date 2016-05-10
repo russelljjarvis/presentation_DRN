@@ -263,13 +263,13 @@ La Trobe University}}}}
 \begin{frame}
 \frametitle{Motivation: Looking to a Future including Network Reconstuction}%{Reconstruction of Networks}
 \begin{itemize}
-
 \vfill \item Light Sheet microscopy, brainbow, and STED may make it possible to digitally recreate more complete forests as opposed to trees.
 \vfill\item Why did I do this? I was inspired by the Blue Brain Project to find out more about real neural networks.
 \vfill\item The Neuromorpho morphologies where/are temporary place holders NeuroMAC is currently able to grow realistic 3D neuron forests in silico, using a forest shapes the trees approach to neural dev.
 \vfill\item Previously Ascoli's L-NAEURON has created a similar tool to grow neurons statistically form is not forest dependant.
 \vfill\item Some models simply distribute Ascoli's in-silico grown trees contiguously in a line on a plane
 \vfill\item Should cortical raster plots have high or low $ C_{V} $ Chaotic spike trains, may mean that the system has no memory. Regular periodic spike trains may not produce enough unique temporal patterns to be said to be temporal coding.
+\vfill \item The Open Brain Project has recently been open sourced, and much more morphological and topological data has recently become available as a result of this process. $https://bbp.epfl.ch/nmc-portal/microcircuit$
 \end{itemize}
 \end{frame}
 \begin{frame}
@@ -277,7 +277,7 @@ La Trobe University}}}}
 \begin{itemize}
 \vfill\item Schizophrenia, the reduced neuropil hypothesis.
 \vfill\item In schizophrenia Atrophy of neural forests is observed in hippocampus and cortex.
-\vfill\item Does reduced electrotonic distance change firing dynamics more than reduced connectivity.
+\vfill\item Does reduced electrotonic distance change firing dynamics more than reduced connectivity of networks caused by the atrophy of synapse locations.
 \vfill\item Shrink neuron trees but retain healthy connectivity to find out.
 \vfill\item Spike Distance, graphically showed the $C_{V}$ as the network activity proceeded through time. 
 \vfill\item At the time I thought that what I was doing couldn't be any worse than the small world network topologies assumed by other models.
@@ -287,6 +287,63 @@ La Trobe University}}}}
 \end{itemize}
 \end{frame}
 
+%Problem is above here
+\begin{frame}
+	\frametitle{From Reconstructed Cells to Reconstructed Networks.}
+
+	%\subsection{From Reconstructed Cells to Reconstructed Networks.}%Basic problems that were solved.
+	\begin{itemize}
+		\vfill \item In order to move from reconstructed Cells to reconstructed networks, one must connect neurons in a biologically informed way. Spatial and anatomical data from the Allen Rodent Brain Atlas, is used to inform cell centre position and synapse polarity.
+		
+		\vfill \item Neurons are connected by conducting an exhaustive search in the neural volume for near contact points and allocating a network connection to the intervening synapse cleft.
+		
+		%, and to check a neurons ability to influence other cells connected in the network.
+	\end{itemize}
+\end{frame}
+
+
+
+%------------------------------------------------
+
+\begin{frame}{From Neurite coordinates to  to synaptic cleft}
+	%\frametitle
+	\subsection{From Neurite coordinates to  to synaptic cleft.}
+	
+	%\framesubtitle{Frame subtitles are optional. Use upper- or lowercase letters.}
+	
+	\begin{figure} \caption{Two neurons with classified Membrane with Post Synapses} 
+		\includegraphics[scale=0.5]{classify.png} \end{figure}
+	
+	
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Types of Data}%{Reconstruction of Networks}
+	\begin{itemize}
+		
+		\vfill\item 3D structure SWC files.
+		\vfill \item Spike times for cell indexs -> raster plots.
+		\vfill \item From Raster Plots you can move to Spike Distance
+		\vfill \item Transfer Entropy.
+		\vfill \item Ajacency matrices, sometimes population specific.
+			\begin{itemize}
+				\vfill \item Ajacency matrices, Indexs are sorted before
+				\vfill \item Displaying as a chord diagram
+			\end{itemize}
+		\vfill \item Membrane potential traces.	
+\end{itemize}
+\vfill
+\fontsize{6pt}{6pt}\selectfont 
+(sources:)
+http://www.igi.tugraz.at/maass/129/129a.htm
+
+\end{frame}
+
+		%\begin{figure} 
+		%\includegraphics[scale=0.2]{anatomy1}
+		%	\end{figure} 
+		
 
 
 \begin{frame}
@@ -1088,9 +1145,9 @@ FDR Infiniband.
 
 \vfill \item Cogntive neuro prosthesis. If we understand what neurons are doing in the hippocampus and prefrontal cortex it is more likely that we will be able to replace their functions in the future.
 %\vfill \item Computation that exploits noise.
-\vfill \item \textbf{Neuromorphic Engineering}: Noise tolerant AI, by using brain principles, such as computation with noise, using spiking neural networks. 
+%\vfill \item \textbf{Neuromorphic Engineering}: Noise tolerant AI, by using brain principles, such as computation with noise, using spiking neural networks. 
  
-\vfill \item Epilepsy seizure detection with real time spike distance, in recording electrodes.
+%\vfill \item Epilepsy seizure detection with real time spike distance, in recording electrodes.
 
 \end{itemize}
 \end{frame}
@@ -1101,18 +1158,18 @@ FDR Infiniband.
 
 \begin{frame}
 \frametitle{Applications}
-\subsection{Applications}
+%\subsection{Applications}
 \begin{itemize}
 
-\vfill \item Reverse engineering principles of brain function.
+\vfill \item The motivation of neuron simulations is to try to reverse engineering principles of brain function.
 
 \vfill \item The dynamic clamp Closed loop, real-time NEURON. Models a missing network, and Substites in the missing network behavior with electrode arrays. 
 
-\vfill \item Cogntive neuro prosthesis. If we understand what neurons are doing in the hippocampus and prefrontal cortex it is more likely that we will be able to replace their functions in the future.
+%\vfill \item Cogntive neuro prosthesis. If we understand what neurons are doing in the hippocampus and prefrontal cortex it is more likely that we will be able to replace their functions in the future.
 %\vfill \item Computation that exploits noise.
-\vfill \item \textbf{Neuromorphic Engineering}: Noise tolerant AI, by using brain principles, such as computation with noise, using spiking neural networks. 
+%\vfill \item \textbf{Neuromorphic Engineering}: Noise tolerant AI, by using brain principles, such as computation with noise, using spiking neural networks. 
  
-\vfill \item Epilepsy seizure detection with real time spike distance, in recording electrodes.
+%\vfill \item Epilepsy seizure detection with real time spike distance, in recording electrodes.
 
 \end{itemize}
 \end{frame}
@@ -1149,35 +1206,6 @@ FDR Infiniband.
 %\end{itemize}
 \end{frame}
 
-%Problem is above here
-\begin{frame}
-\frametitle{From Reconstructed Cells to Reconstructed Networks.}
-\subsection{From Reconstructed Cells to Reconstructed Networks}
-%\subsection{From Reconstructed Cells to Reconstructed Networks.}%Basic problems that were solved.
-\begin{itemize}
-\vfill \item In order to move from reconstructed Cells to reconstructed networks, one must connect neurons in a biologically informed way. Spatial and anatomical data from the Allen Rodent Brain Atlas, is used to inform cell centre position and synapse polarity.
-
-\vfill \item Neurons are connected by conducting an exhaustive search in the neural volume for near contact points and allocating a network connection to the intervening synapse cleft.
-
-%, and to check a neurons ability to influence other cells connected in the network.
-\end{itemize}
-\end{frame}
-
-
-
-%------------------------------------------------
-
-\begin{frame}{From Neurite coordinates to  to synaptic cleft}
-%\frametitle
-\subsection{From Neurite coordinates to  to synaptic cleft.}
-
-%\framesubtitle{Frame subtitles are optional. Use upper- or lowercase letters.}
-
-\begin{figure} \caption{Two neurons with classified Membrane with Post Synapses} 
-\includegraphics[scale=0.5]{classify.png} \end{figure}
-
-
-\end{frame}
 
 
 \defverbatim[colored]\lstI{
